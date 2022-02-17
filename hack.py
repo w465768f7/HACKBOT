@@ -1,6 +1,5 @@
-#All credit goes to LEGEND-OS
 import os
-os.system("pip install Telethon==1.21.1")
+os.system("pip install -U telethon")
 from telethon import TelegramClient, events, functions, types, Button
 
 api_id = os.environ.get("APP_ID")
