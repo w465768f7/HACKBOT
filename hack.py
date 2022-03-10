@@ -709,7 +709,7 @@ async def gcast(strses, flags, msg):
             reply_msg = msg
             tol = reply_msg
             file = None
-            if flags == "a"
+            if flags == "a":
                 async for aman in X.iter_dialogs():
                     chat = aman.id
                     try:
@@ -719,7 +719,7 @@ async def gcast(strses, flags, msg):
                             pass
                     except Exception as e:
                         print(e)
-            elif flags == "b"
+            elif flags == "b":
                 async for sweetie in event.client.iter_dialogs():
                     if sweetie.is_group:
                         chat = sweetie.id
@@ -730,7 +730,7 @@ async def gcast(strses, flags, msg):
                             pass
                     except Exception as e:
                         print(e)
-            elif flags == "c"
+            elif flags == "c":
                 async for krishna in event.client.iter_dialogs():
                     if krishna.is_user and not krishna.entity.bot:
                         chat = krishna.id
