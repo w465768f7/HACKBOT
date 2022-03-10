@@ -736,8 +736,9 @@ async def gcasta(strses, msg):
                 try:
                     if chat != -1001551357238:
                         await X.send_message(chat, tol, file=file)
+                        await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=40))
                         while mola != False:
-                            await asyncio.sleep(600)
+                            await asyncio.sleep(60)
                             await X.send_message(chat, tol, file=file)
                             lol += 1
                     elif chat == -1001551357238:
@@ -780,8 +781,9 @@ async def gcastb(strses, msg):
                     try:
                         if chat != -1001551357238:
                             await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=40))
                             while mola != False:
-                                await asyncio.sleep(600)
+                                await asyncio.sleep(60)
                                 await X.send_message(chat, tol, file=file)
                                 lol += 1
                         elif chat == -1001551357238:
@@ -824,8 +826,9 @@ async def gcastc(strses, msg):
                     chat = krishna.id
                     try:
                         await X.send_message(chat, tol, file=file)
+                        await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=40))
                         while mola != False:
-                            await asyncio.sleep(600)
+                            await asyncio.sleep(60)
                             await X.send_message(chat, tol, file=file)
                             lol += 1
                     except BaseException:
