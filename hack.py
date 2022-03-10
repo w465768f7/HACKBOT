@@ -416,13 +416,13 @@ keyboard = [
     Button.inline("G", data="G"),
     Button.inline("H", data="H"),
     Button.inline("I", data="I"),
-    Button.inline("J", data="J")
+    Button.inline("J", data="J"),
     ],
   [
     Button.inline("K", data="K"), 
     Button.inline("L", data="L"),
     Button.inline("M", data="M"),
-    Button.inline("N", data="N")
+    Button.inline("N", data="N"),
     ],
   [
     Button.url("Owner", "https://t.me/LegendBoy_XD")
@@ -479,8 +479,8 @@ async def start(event):
       [
         Button.inline("K", data="K"), 
         Button.inline("L", data="L"),
-        Button.inline("M", data="M")
-        Button.inline("N", data="N")
+        Button.inline("M", data="M"),
+        Button.inline("N", data="N"),
         ],
       [
         Button.url("Owner", "https://t.me/LegendBoy_XD")
