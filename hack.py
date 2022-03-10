@@ -840,8 +840,9 @@ async def users(event):
         pass
       else:
         return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
-      await x.send_message("NOW GIVE MSG")
+      await x.send_message("NOW GIVE MSG IT WILL AUTOMATICALLY START")
       msg = await x.get_response()
+      await x.send_message("Now Done It Will Send message automatically every 10 min")
       i = await gcastc(strses.text, msg.text)
       await event.reply(f"Done Gcasted In {i} Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
