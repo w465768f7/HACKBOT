@@ -774,23 +774,19 @@ async def gcastb(strses, msg):
             reply_msg = msg
             tol = reply_msg
             file = None
-            sed = 0
-            lol = 0
             async for sweetie in X.iter_dialogs():
                 if sweetie.is_group:
                     chat = sweetie.id
                     try:
-                        await X.send_message(chat, tol, file=file)
                         if chat != -1001551357238:
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(60)
                             while molb != False:
-                                await asyncio.sleep(60)
                                 await X.send_message(chat, tol, file=file)
-                                lol += 1
                         elif chat == -1001551357238:
                             pass
                     except BaseException:
-                        sed += 1
-                    return lol
+                        pass
         except Exception as e:
             print(e)
 
@@ -819,8 +815,6 @@ async def gcastc(strses, msg):
             reply_msg = msg
             tol = reply_msg
             file = None
-            sed = 0
-            lol = 0
             async for krishna in X.iter_dialogs():
                 if krishna.is_user and not krishna.entity.bot:
                     chat = krishna.id
@@ -829,10 +823,8 @@ async def gcastc(strses, msg):
                         while molc != False:
                             await asyncio.sleep(10)
                             await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=20))
-                            lol += 1
                     except BaseException:
-                        sed += 1
-                    return lol
+                        pass
         except Exception as e:
             print(e)
 
