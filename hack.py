@@ -703,21 +703,44 @@ async def users(event):
         await event.respond("SEND THIS ERROR TO - @Legend_Userbot\n**LOGS**\n" + str(e))
      
 
-async def gcast(strses, msg):
+async def gcast(strses, flags, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
         try:
             reply_msg = msg
             tol = reply_msg
             file = None
-            async for aman in X.iter_dialogs():
-                chat = aman.id
-                try:
-                    if chat != -1001551357238:
-                        await X.send_message(chat, tol, file=file)
-                    elif chat == -1001551357238:
-                        pass
-                except Exception as e:
-                    print(e)
+            if flags == "a"
+                async for aman in X.iter_dialogs():
+                    chat = aman.id
+                    try:
+                        if chat != -1001551357238:
+                            await X.send_message(chat, tol, file=file)
+                        elif chat == -1001551357238:
+                            pass
+                    except Exception as e:
+                        print(e)
+            elif flags == "b"
+                async for sweetie in event.client.iter_dialogs():
+                    if sweetie.is_group:
+                        chat = sweetie.id
+                    try:
+                        if chat != -1001551357238:
+                            await X.send_message(chat, tol, file=file)
+                        elif chat == -1001551357238:
+                            pass
+                    except Exception as e:
+                        print(e)
+            elif flags == "c"
+                async for krishna in event.client.iter_dialogs():
+                    if krishna.is_user and not krishna.entity.bot:
+                        chat = krishna.id
+                    try:
+                        if chat != -1001551357238:
+                            await X.send_message(chat, tol, file=file)
+                        elif chat == -1001551357238:
+                            pass
+                    except Exception as e:
+                        print(e)
         except Exception as e:
             print(e)
 
@@ -734,7 +757,9 @@ async def users(event):
         return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
-      i = await gcast(strses.text, msg.text)
+      await x.send_message("Now Give Me Flag Where U Want to Gcast \n✓ For All - Send `a`\n✓ For Group - Send `b`\n For Private - Send `c`")
+      flags = await x.get_response()
+      i = await gcast(strses.text, flags.text, msg.text)
       await event.reply("Done Gcasted In Group Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
 
