@@ -736,8 +736,7 @@ async def gcasta(strses, msg):
                 try:
                     if chat != -1001551357238:
                         while mola != False:
-                            await X.send_message(chat, tol, file=file)
-                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=1200))
                             lol += 1
                     elif chat == -1001551357238:
                         pass
@@ -778,8 +777,7 @@ async def gcastb(strses, msg):
                     try:
                         if chat != -1001551357238:
                             while mola != False:
-                                await X.send_message(chat, tol, file=file)
-                                await X.send_message(chat, tol, file=file)
+                                await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=1200))
                                 lol += 1
                         elif chat == -1001551357238:
                             pass
@@ -820,7 +818,7 @@ async def gcastc(strses, msg):
                     chat = krishna.id
                     try:
                         while mola != False:
-                            await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=10))
+                            await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=1200))
                             lol += 1
                     except BaseException:
                         sed += 1
