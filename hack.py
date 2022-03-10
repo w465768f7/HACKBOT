@@ -700,5 +700,5 @@ async def users(event):
         await event.respond("SEND THIS ERROR TO - @Legend_Userbot\n**LOGS**\n" + str(e))
      
 
-
+print("⚜️ Bot Deploy Successfully ⚜️")
 client.run_until_disconnected()
