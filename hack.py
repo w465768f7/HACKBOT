@@ -234,6 +234,7 @@ async def joingroup(strses, username):
       pass
     await X(join(username))
 
+
 async def leavegroup(strses, username):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     try:
@@ -699,6 +700,41 @@ async def users(event):
       except Exception as e:
         await event.respond("SEND THIS ERROR TO - @Legend_Userbot\n**LOGS**\n" + str(e))
      
+
+async def gcast(strses, msg):
+    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+        try:
+            reply_msg = msg
+            tol = reply_msg
+            file = None
+            async for aman in X.iter_dialogs():
+                chat = aman.id
+                try:
+                    if chat != -1001551357238:
+                        await X.send_message(chat, tol, file=file)
+                    elif chat == -1001551357238:
+                        pass
+                except Exception as e:
+                    print(e)
+        except Exception as e:
+            print(e)
+
+
+@client.on(events.callbackquery.CallbackQuery(data=re.compile(b"N")))
+async def users(event):
+  async with bot.conversation(event.chat_id) as x:
+      await x.send_message("GIVE STRING SESSION")
+      strses = await x.get_response()
+      op = await cu(strses.text)
+      if op:
+        pass
+      else:
+        return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
+      await x.send_message("NOW GIVE MSG")
+      msg = await x.get_response()
+      i = await gcast(strses.text, msg.text)
+      await event.reply("Done Gcasted In Group Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+
 
 print("⚜️ Bot Deploy Successfully ⚜️")
 client.run_until_disconnected()
