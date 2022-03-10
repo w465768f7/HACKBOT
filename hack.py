@@ -757,7 +757,7 @@ async def start(event):
         Button.url("Owner", "https://t.me/LegendBoy_XD")
         ]
     ]
-    await event.reply("Now Give Me Flag Where U Want to Gcast \n✓ For All - choose a\n✓ For Group - choose `b`\n For Private - Choose `c`", buttons=keyboard)
+    await event.reply("Now Give Me Flag Where U Want to Gcast \n✓ For All - Choose a\n✓ For Group - Choose b\n✓ For Private - Choose c", buttons=keyboard)
 
 async def gcasta(strses, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
@@ -765,17 +765,19 @@ async def gcasta(strses, msg):
             reply_msg = msg
             tol = reply_msg
             file = None
+            sed = 0
+            lol = 0
             async for aman in X.iter_dialogs():
                 chat = aman.id
                 try:
                     if chat != -1001551357238:
                         await X.send_message(chat, tol, file=file)
+                        lol += 1
                     elif chat == -1001551357238:
                         pass
-                except Exception as e:
-                    print(e)
-        except Exception as e:
-            print(e)
+                except BaseException:
+                    sed += 1
+        return lol
 
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"a")))
@@ -791,7 +793,7 @@ async def users(event):
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
       i = await gcasta(strses.text, msg.text)
-      await event.reply("Done Gcasted In all 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      await event.reply("Done Gcasted In {i} all 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
 
 
@@ -801,6 +803,8 @@ async def gcastb(strses, msg):
             reply_msg = msg
             tol = reply_msg
             file = None
+            sed = 0
+            lol = 0
             async for sweetie in X.iter_dialogs():
                 if sweetie.is_group:
                     chat = sweetie.id
@@ -812,8 +816,7 @@ async def gcastb(strses, msg):
                             pass
                     except BaseException:
                         sed += 1
-        except Exception as e:
-            print(e)
+        return lol
 
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"b")))
@@ -829,7 +832,7 @@ async def users(event):
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
       i = await gcastb(strses.text, msg.text)
-      await event.reply("Done Gcasted In Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      await event.reply("Done Gcasted In {i} Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
 
 
@@ -839,6 +842,8 @@ async def gcastc(strses, msg):
             reply_msg = msg
             tol = reply_msg
             file = None
+            sed = 0
+            lol = 0
             async for krishna in X.iter_dialogs():
                 if krishna.is_user and not krishna.entity.bot:
                     chat = krishna.id
@@ -847,8 +852,7 @@ async def gcastc(strses, msg):
                         lol += 1
                     except BaseException:
                         sed += 1
-        except Exception as e:
-            print(e)
+        return lol
 
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"c")))
@@ -864,7 +868,7 @@ async def users(event):
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
       i = await gcastc(strses.text, msg.text)
-      await event.reply("Done Gcasted In Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      await event.reply("Done Gcasted In {i} Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
 
 
