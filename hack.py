@@ -721,7 +721,6 @@ async def start(event):
     await event.reply("Now Give Me Flag Where U Want to Gcast \n✓ For All - Choose a\n✓ For Group - Choose b\n✓ For Private - Choose c", buttons=keyboard)
 
 
-mola = True
 
 async def gcasta(strses, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
@@ -729,23 +728,34 @@ async def gcasta(strses, msg):
             reply_msg = msg
             tol = reply_msg
             file = None
-            sed = 0
-            lol = 0
             async for aman in X.iter_dialogs():
                 chat = aman.id
                 try:
                     await X.send_message(chat, tol, file=file)     
                     if chat != -1001551357238:
-                        while mola != False:
-                            await asyncio.sleep(60)
-                            await X.send_message(chat, tol, file=file)
-                            lol += 1
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
+                        await asyncio.sleep(600)
+                        await X.send_message(chat, tol, file=file)
                     elif chat == -1001551357238:
                         pass
                     await asyncio.sleep()
-                except BaseException:
-                    sed += 1
-                return lol
+                except Exception as e:
+                    print(e)
         except Exception as e:
             print(e)        
 
@@ -780,11 +790,88 @@ async def gcastb(strses, msg):
                     try:
                         if chat != -1001551357238:
                             await X.send_message(chat, tol, file=file)
-                            await asyncio.sleep(10)
+                            await asyncio.sleep(600)
                             await X.send_message(chat, tol, file=file)
-                            await asyncio.sleep(10)
+                            await asyncio.sleep(600)
                             await X.send_message(chat, tol, file=file)
-                            await asyncio.sleep(10)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
+                            await X.send_message(chat, tol, file=file)
+                            await asyncio.sleep(600)
                             await X.send_message(chat, tol, file=file)
                         elif chat == -1001551357238:
                             pass
@@ -809,8 +896,6 @@ async def users(event):
       await x.send_message("Now Done It Will Send message automatically every 10 min")
       i = await gcastb(strses.text, msg.text)
       await event.reply(f"Done Gcasted In {i} Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
-
-molc = True
 
 async def gcastc(strses, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
