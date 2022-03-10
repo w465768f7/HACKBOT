@@ -818,7 +818,8 @@ async def gcastc(strses, msg):
                     chat = krishna.id
                     try:
                         while mola != False:
-                            await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=1200))
+                            await asyncio.sleep(10)
+                            await X.send_message(chat, tol, file=file)
                             lol += 1
                     except BaseException:
                         sed += 1
