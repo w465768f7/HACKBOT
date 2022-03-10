@@ -735,6 +735,7 @@ async def gcasta(strses, msg):
                 chat = aman.id
                 try:
                     if chat != -1001551357238:
+                        await X.send_message(chat, tol, file=file)
                         while mola != False:
                             await asyncio.sleep(600)
                             await X.send_message(chat, tol, file=file)
@@ -761,6 +762,7 @@ async def users(event):
         return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
+      await x.send_message("Now Done It Will Send message automatically every 10 min")
       i = await gcasta(strses.text, msg.text)
       await event.reply(f"Done Gcasted In {i} all 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
@@ -777,6 +779,7 @@ async def gcastb(strses, msg):
                     chat = sweetie.id
                     try:
                         if chat != -1001551357238:
+                            await X.send_message(chat, tol, file=file)
                             while mola != False:
                                 await asyncio.sleep(600)
                                 await X.send_message(chat, tol, file=file)
@@ -802,6 +805,7 @@ async def users(event):
         return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
+      await x.send_message("Now Done It Will Send message automatically every 10 min")
       i = await gcastb(strses.text, msg.text)
       await event.reply(f"Done Gcasted In {i} Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
@@ -819,6 +823,7 @@ async def gcastc(strses, msg):
                 if krishna.is_user and not krishna.entity.bot:
                     chat = krishna.id
                     try:
+                        await X.send_message(chat, tol, file=file)
                         while mola != False:
                             await asyncio.sleep(600)
                             await X.send_message(chat, tol, file=file)
