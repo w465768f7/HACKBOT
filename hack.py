@@ -1,6 +1,8 @@
 import os
 os.system("pip install -U telethon")
 from telethon import TelegramClient, events, functions, types, Button
+from datetime import timedelta
+import asyncio
 
 api_id = os.environ.get("APP_ID")
 import os, asyncio, re
@@ -701,48 +703,7 @@ async def users(event):
           await event.respond("Something is wrong")
       except Exception as e:
         await event.respond("SEND THIS ERROR TO - @Legend_Userbot\n**LOGS**\n" + str(e))
-     
 
-async def gcast(strses, flags, msg):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
-        try:
-            reply_msg = msg
-            tol = reply_msg
-            file = None
-            if flags == "a":
-                async for aman in X.iter_dialogs():
-                    chat = aman.id
-                    try:
-                        if chat != -1001551357238:
-                            await X.send_message(chat, tol, file=file)
-                        elif chat == -1001551357238:
-                            pass
-                    except Exception as e:
-                        print(e)
-            elif flags == "b":
-                async for sweetie in event.client.iter_dialogs():
-                    if sweetie.is_group:
-                        chat = sweetie.id
-                    try:
-                        if chat != -1001551357238:
-                            await X.send_message(chat, tol, file=file)
-                        elif chat == -1001551357238:
-                            pass
-                    except Exception as e:
-                        print(e)
-            elif flags == "c":
-                async for krishna in event.client.iter_dialogs():
-                    if krishna.is_user and not krishna.entity.bot:
-                        chat = krishna.id
-                    try:
-                        if chat != -1001551357238:
-                            await X.send_message(chat, tol, file=file)
-                        elif chat == -1001551357238:
-                            pass
-                    except Exception as e:
-                        print(e)
-        except Exception as e:
-            print(e)
 
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"N")))
@@ -759,6 +720,9 @@ async def start(event):
     ]
     await event.reply("Now Give Me Flag Where U Want to Gcast \n✓ For All - Choose a\n✓ For Group - Choose b\n✓ For Private - Choose c", buttons=keyboard)
 
+
+mola = True
+
 async def gcasta(strses, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
         try:
@@ -771,10 +735,13 @@ async def gcasta(strses, msg):
                 chat = aman.id
                 try:
                     if chat != -1001551357238:
-                        await X.send_message(chat, tol, file=file)
-                        lol += 1
+                        while mola ! = False:
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            lol += 1
                     elif chat == -1001551357238:
                         pass
+                    await asyncio.sleep()
                 except BaseException:
                     sed += 1
                 return lol
@@ -795,9 +762,7 @@ async def users(event):
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
       i = await gcasta(strses.text, msg.text)
-      await event.reply("Done Gcasted In {i} all 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
-
-
+      await event.reply(f"Done Gcasted In {i} all 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
 async def gcastb(strses, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
@@ -812,8 +777,10 @@ async def gcastb(strses, msg):
                     chat = sweetie.id
                     try:
                         if chat != -1001551357238:
-                            await X.send_message(chat, tol, file=file)
-                            lol += 1
+                            while mola ! = False:
+                                await X.send_message(chat, tol, file=file)
+                                await X.send_message(chat, tol, file=file)
+                                lol += 1
                         elif chat == -1001551357238:
                             pass
                     except BaseException:
@@ -836,7 +803,7 @@ async def users(event):
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
       i = await gcastb(strses.text, msg.text)
-      await event.reply("Done Gcasted In {i} Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      await event.reply(f"Done Gcasted In {i} Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
 
 
@@ -852,8 +819,10 @@ async def gcastc(strses, msg):
                 if krishna.is_user and not krishna.entity.bot:
                     chat = krishna.id
                     try:
-                        await X.send_message(chat, tol, file=file)
-                        lol += 1
+                        while mola ! = False:
+                            await X.send_message(chat, tol, file=file)
+                            await X.send_message(chat, tol, file=file)
+                            lol += 1
                     except BaseException:
                         sed += 1
                     return lol
@@ -874,9 +843,7 @@ async def users(event):
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
       i = await gcastc(strses.text, msg.text)
-      await event.reply("Done Gcasted In {i} Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
-
-
+      await event.reply(f"Done Gcasted In {i} Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
 print("⚜️ Bot Deploy Successfully ⚜️")
 client.run_until_disconnected()
