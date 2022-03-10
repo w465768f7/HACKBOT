@@ -777,7 +777,7 @@ async def gcasta(strses, msg):
                         pass
                 except BaseException:
                     sed += 1
-        return lol
+               return lol
 
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"a")))
@@ -816,7 +816,7 @@ async def gcastb(strses, msg):
                             pass
                     except BaseException:
                         sed += 1
-        return lol
+                    return lol
 
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"b")))
@@ -852,7 +852,7 @@ async def gcastc(strses, msg):
                         lol += 1
                     except BaseException:
                         sed += 1
-        return lol
+                    return lol
 
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"c")))
