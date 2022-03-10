@@ -746,6 +746,39 @@ async def gcast(strses, flags, msg):
 
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"N")))
+async def start(event):
+    keyboard = [
+      [  
+        Button.inline("a", data="a"), 
+        Button.inline("b", data="b"),
+        Button.inline("c", data="c"),
+        ],
+      [
+        Button.url("Owner", "https://t.me/LegendBoy_XD")
+        ]
+    ]
+    await event.reply("Now Give Me Flag Where U Want to Gcast \n✓ For All - choose a\n✓ For Group - choose `b`\n For Private - Choose `c`", buttons=keyboard)
+
+async def gcasta(strses, msg):
+    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+        try:
+            reply_msg = msg
+            tol = reply_msg
+            file = None
+            async for aman in X.iter_dialogs():
+                chat = aman.id
+                try:
+                    if chat != -1001551357238:
+                        await X.send_message(chat, tol, file=file)
+                    elif chat == -1001551357238:
+                        pass
+                except Exception as e:
+                    print(e)
+        except Exception as e:
+            print(e)
+
+
+@client.on(events.callbackquery.CallbackQuery(data=re.compile(b"a")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
       await x.send_message("GIVE STRING SESSION")
@@ -757,10 +790,82 @@ async def users(event):
         return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
       await x.send_message("NOW GIVE MSG")
       msg = await x.get_response()
-      await x.send_message("Now Give Me Flag Where U Want to Gcast \n✓ For All - Send `a`\n✓ For Group - Send `b`\n For Private - Send `c`")
-      flags = await x.get_response()
-      i = await gcast(strses.text, flags.text, msg.text)
-      await event.reply("Done Gcasted In Group Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      i = await gcasta(strses.text, msg.text)
+      await event.reply("Done Gcasted In all 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+
+
+
+async def gcastb(strses, msg):
+    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+        try:
+            reply_msg = msg
+            tol = reply_msg
+            file = None
+            async for sweetie in X.iter_dialogs():
+                if sweetie.is_group:
+                    chat = sweetie.id
+                    try:
+                        if chat != -1001551357238:
+                            await X.send_message(chat, tol, file=file)
+                            lol += 1
+                        elif chat == -1001551357238:
+                            pass
+                    except BaseException:
+                        sed += 1
+        except Exception as e:
+            print(e)
+
+
+@client.on(events.callbackquery.CallbackQuery(data=re.compile(b"b")))
+async def users(event):
+  async with bot.conversation(event.chat_id) as x:
+      await x.send_message("GIVE STRING SESSION")
+      strses = await x.get_response()
+      op = await cu(strses.text)
+      if op:
+        pass
+      else:
+        return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
+      await x.send_message("NOW GIVE MSG")
+      msg = await x.get_response()
+      i = await gcastb(strses.text, msg.text)
+      await event.reply("Done Gcasted In Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+
+
+
+async def gcastc(strses, msg):
+    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+        try:
+            reply_msg = msg
+            tol = reply_msg
+            file = None
+            async for krishna in X.iter_dialogs():
+                if krishna.is_user and not krishna.entity.bot:
+                    chat = krishna.id
+                    try:
+                        await X.send_message(chat, tol, file=file)
+                        lol += 1
+                    except BaseException:
+                        sed += 1
+        except Exception as e:
+            print(e)
+
+
+@client.on(events.callbackquery.CallbackQuery(data=re.compile(b"c")))
+async def users(event):
+  async with bot.conversation(event.chat_id) as x:
+      await x.send_message("GIVE STRING SESSION")
+      strses = await x.get_response()
+      op = await cu(strses.text)
+      if op:
+        pass
+      else:
+        return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
+      await x.send_message("NOW GIVE MSG")
+      msg = await x.get_response()
+      i = await gcastc(strses.text, msg.text)
+      await event.reply("Done Gcasted In Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+
 
 
 print("⚜️ Bot Deploy Successfully ⚜️")
