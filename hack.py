@@ -788,7 +788,7 @@ async def gcastb(strses, msg):
                 if sweetie.is_group:
                     chat = sweetie.id
                     try:
-                        if chat != -1001551357238:
+                        if chat != -1001368578667:
                             await X.send_message(chat, tol, file=file)
                             await asyncio.sleep(60)
                             await X.send_message(chat, tol, file=file)
@@ -873,10 +873,10 @@ async def gcastb(strses, msg):
                             await X.send_message(chat, tol, file=file)
                             await asyncio.sleep(60)
                             await X.send_message(chat, tol, file=file)
-                        elif while molb != False:
-                            await asyncio.sleep(600)
-                            await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=60))
-                        elif chat == -1001551357238:
+                            while molb != False:
+                                await asyncio.sleep(600)
+                                await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=60))
+                        elif chat == -1001368578667:
                             pass
                     except Exception as e:
                         print(e)
