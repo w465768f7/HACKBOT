@@ -735,7 +735,7 @@ async def gcasta(strses, msg):
                 chat = aman.id
                 try:
                     if chat != -1001551357238:
-                        while mola ! = False:
+                        while mola != False:
                             await X.send_message(chat, tol, file=file)
                             await X.send_message(chat, tol, file=file)
                             lol += 1
@@ -777,7 +777,7 @@ async def gcastb(strses, msg):
                     chat = sweetie.id
                     try:
                         if chat != -1001551357238:
-                            while mola ! = False:
+                            while mola != False:
                                 await X.send_message(chat, tol, file=file)
                                 await X.send_message(chat, tol, file=file)
                                 lol += 1
@@ -819,7 +819,7 @@ async def gcastc(strses, msg):
                 if krishna.is_user and not krishna.entity.bot:
                     chat = krishna.id
                     try:
-                        while mola ! = False:
+                        while mola != False:
                             await X.send_message(chat, tol, file=file)
                             await X.send_message(chat, tol, file=file)
                             lol += 1
