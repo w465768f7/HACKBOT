@@ -734,9 +734,8 @@ async def gcasta(strses, msg):
             async for aman in X.iter_dialogs():
                 chat = aman.id
                 try:
+                    await X.send_message(chat, tol, file=file)     
                     if chat != -1001551357238:
-                        await X.send_message(chat, tol, file=file)
-                        await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=40))
                         while mola != False:
                             await asyncio.sleep(60)
                             await X.send_message(chat, tol, file=file)
@@ -767,6 +766,8 @@ async def users(event):
       i = await gcasta(strses.text, msg.text)
       await event.reply(f"Done Gcasted In {i} all 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
+molb = True
+
 async def gcastb(strses, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
         try:
@@ -779,10 +780,9 @@ async def gcastb(strses, msg):
                 if sweetie.is_group:
                     chat = sweetie.id
                     try:
+                        await X.send_message(chat, tol, file=file)
                         if chat != -1001551357238:
-                            await X.send_message(chat, tol, file=file)
-                            await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=40))
-                            while mola != False:
+                            while molb != False:
                                 await asyncio.sleep(60)
                                 await X.send_message(chat, tol, file=file)
                                 lol += 1
@@ -811,7 +811,7 @@ async def users(event):
       i = await gcastb(strses.text, msg.text)
       await event.reply(f"Done Gcasted In {i} Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
 
-
+molc = True
 
 async def gcastc(strses, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
@@ -826,10 +826,9 @@ async def gcastc(strses, msg):
                     chat = krishna.id
                     try:
                         await X.send_message(chat, tol, file=file)
-                        await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=40))
-                        while mola != False:
-                            await asyncio.sleep(60)
-                            await X.send_message(chat, tol, file=file)
+                        while molc != False:
+                            await asyncio.sleep(10)
+                            await X.send_message(chat, tol, file=file, schedule=timedelta(seconds=20))
                             lol += 1
                     except BaseException:
                         sed += 1
