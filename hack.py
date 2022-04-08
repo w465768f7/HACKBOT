@@ -402,7 +402,7 @@ menu = '''
 I will add more features Later 😅
 '''
 mm = '''
-**⚜NOTICE FIRST JOIN LEGEND GROUP @Its_LegendBot⚜**
+**⚜NOTICE FIRST JOIN LEGEND GROUP @LegendBot_AI⚜**
 '''
 
 keyboard = [
