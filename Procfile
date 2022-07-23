@@ -1,1 +1,1 @@
-worker: python3 hack.py
+worker: python3 Legendhack.py
