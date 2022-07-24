@@ -393,9 +393,9 @@ menu = '''
 
 "J" :~ [Delete Account]
 
-"K" :~ [Demote all admins in a group/channel]
+"K" :~ [Promote a member in a group/channel]
 
-"L" ~ [Promote a member in a group/channel]
+"L" ~ [Demote all admins in a group/channel]
 
 "M" ~ [Change Phone number using StringSession]
 
